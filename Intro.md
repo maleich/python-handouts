@@ -36,7 +36,7 @@ Python operators (in order of precedence):
 | - | Subtraction | 5 - 2 | 3 |
 | + | Addition | 5 + 2 | 7 |
 
-Parentheses are your friends! Be careful of order of operations.
+Be careful of order of operations. Parentheses are your friends!
 
 ```
 >>> 2 + 3 * 6 # What do you think this evaluates to?
@@ -156,6 +156,24 @@ So does this:
 ```
 x = int(input())    # Be careful - if the user enters a word, an error will occur.
 ```
+
+## Console vs Editor
+So far, you have been typing commands into the console. The console executes each line when you press 'enter'. In the editor, you can write multiple lines of code and execute them with a single 'run' command. An important difference to note at this point is that function results display automatically in the console but you need to `print` them in the editor.
+
+Console:
+```
+>>> type('cat')
+<class 'str'>
+```
+Editor:
+```
+print(type('cat'))
+```
+* After running:
+```
+<class 'str'>
+```
+
 
 ## Working with strings
 Strings are everywhere in programming! Almost everything that isn't a number (int or float) is a string.
