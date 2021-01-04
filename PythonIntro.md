@@ -1,4 +1,7 @@
-# Python Day 1
+# Introduction to Python
+Command line, printing, comments, math operators, error types, intro to strings
+
+
 ## Hello world
 Use the command line for these.
 
