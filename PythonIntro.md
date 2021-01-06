@@ -201,17 +201,17 @@ Examples:
 Adding numbers together computes the sum of those numbers. Adding strings together sticks them together.
 
 ```
->>> print()'Hello' + 'world')
+>>> print('Hello' + 'world')
 Helloworld
 ```
 
 Note the strings are stuck to each other with no space. If you want a space you can include it as part of a string or you can use separate the strings with a comma. (There are other options, too.) How you do it will depend on what you are doing.
 
 ```
->>> print()'Hello ' + 'world')    # added space at the end of Hello
+>>> print('Hello ' + 'world')    # added space at the end of Hello
 Hello world
 
->>> print()'Hello' , 'world')    #    printed each string in sequence
+>>> print('Hello' , 'world')    #    printed each string in sequence
 Hello world
 ```
 
