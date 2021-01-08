@@ -1,27 +1,53 @@
-1 - String Manipulation
-General Teacher Notes
-We worked with strings in the ‘Intro to python’ course.  We learned how to get string input, store them in variables, concatenate (join) them together in sentences, and output them using print.
+# Working with strings
 
-This lesson introduces the idea that we can manipulate strings and work with them in several different ways to produce useful information.
-Key Concepts/Vocab/Misconceptions
+## Introduction
+Strings are an example of a data type. There are several different data types in python, so far we have only worked with strings (`str`) and integers (`int`).
 
-Strings are an example of a data type. There are several different data types in python, so far we have only worked with strings and ints (whole numbers).
-String data is always treated as text by the program, even if it contains numeric characters.
-You cannot do traditional maths (addition, subtraction etc) with strings.  They have to be converted (cast) to a numeric data type (int, float etc) first.
-You can do some logical comparisons of strings (equal to, not equal to).
-Python has lots of string functions built in - this means that they have already been coded and included in python and we can use them by calling them (typing their name) and setting their parameters like this:
+String data is always treated as text by the program, even if it contains numeric characters. You cannot do mathematical calculations (addition, subtraction, etc.) with strings.  They have to be converted (cast) to a numeric data type (`int`, `float`) first.
 
-stringFunctionName(parameter)
+### Printing strings
+As you have already seen, strings can be printed using the `print()` fucntion:
+```
+print("Hello world!")
+print('Hello Python!')
+```
+Note that strings must be surrounded by quotes - either single (apostrophe key) or double (quotation mark key). Either will work for simple text. You will want to choose judiciously when including apostrophes for quotes in your text, though.
+
+Let's say you want to print the statement `Let's get started!` in your program. If you use single quotes, Python will get confused as to where the string ends:
+
+```
+print('Let's get started')
+```
+Python will consider the string to be defined by the first 2 quotes (`Let`) and it will try to make the rest of the phrase into a variable. It isn't a valid variable name, and you'll get an error.
+
+To print this phrase, use double quotes around the entire string:
+
+```
+print("Let's get started")
+```
+
+Similarly, if you wanted to include quotation marks in your string, you would use single quotes at the start and end.
+
+```
+print('She said, "I like Python!"')
+```
+What if you want to include both an apostrophe and quotes in your string? You can use something called escape characters - more on that later. (See the section below on escape characters!)
+
+### Concatenation
+Strings can be stuck together (concatenated) using the `+` operator. For example, `'cat' + 'dog'` will create the string `'catdog'` and `'2' + '3'` will give `'23'`. Note that this is a string and should not be confused with the number `23`.
+
+
+
+
+### Escape Characters
+You can do some logical comparisons of strings (equal to, not equal to). Python has lots of string functions built in - this means that they have already been coded and included in python and we can use them by calling them (typing their name) and setting their parameters like this:
+
+`string_function_name(parameter)`
 
 Some string functions take the string as their only parameter, others need further parameters, which we will look at in the examples.
 All of these functions return a value. We will start by storing these values in variables, but will progress on to skipping that step and using the functions directly in output, selection etc.
 The advantages of using built in functions are that it saves us time, and that these functions have already been pre-tested so we know that they will work.
 There are lots of different string functions, we are just going to use some of the most common ones.
-
-
-
-
-
 
 
 
